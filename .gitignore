@@ -1,0 +1,51 @@
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+Unity Smart Merge
+.bak
+
+Crash Reports
+MemoryCaptures/
+
+Rider & VS Code specific files
+.vscode/
+.idea/
+*.sln
+*.csproj
+*.unityproj
+
+Ignore PlayMode/EditorPrefs
+ProjectSettings/EditorBuildSettings.asset
+ProjectSettings/EditorSettings.asset
+ProjectSettings/ProjectSettings.asset
+
+Ignore Auto-generated Lighting Data
+/LightingData.asset
+*/ReflectionProbe-.exr
+
+Ignore Logs and Local Builds
+*.log
+*.apk
+*.aab
+*.ipa
+*.exe
+*.dll
+*.app
+
+Ignore Personal Settings
+*.pidb
+*.suo
+*.userprefs
+*.user
+
+Ignore System-specific files
+.DS_Store
+Thumbs.db
+LLMUnity
+StreamingAssets
+TextMesh Pro
