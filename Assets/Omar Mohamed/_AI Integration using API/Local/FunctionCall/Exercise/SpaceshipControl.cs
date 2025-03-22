@@ -16,6 +16,7 @@ public class SpaceshipControl : MonoBehaviour
     public Button recordButton;
     public TMP_Text recordButtonText;
     public TMP_Text playerText;
+    public TMP_Text responseText; // NEW: LLM response text
 
     void Start()
     {
@@ -66,6 +67,10 @@ public class SpaceshipControl : MonoBehaviour
 
         // Execute action
         PerformAction(action);
+
+        // Get LLM's response (character interaction)
+        string llmResponse = await llmCharacter.Chat(transcribedText);
+        responseText.text = llmResponse; // NEW: Display LLM response
     }
 
     string[] GetFunctionNames<T>()
@@ -87,7 +92,7 @@ public class SpaceshipControl : MonoBehaviour
         return prompt;
     }
 
- void PerformAction(string action)
+    void PerformAction(string action)
     {
         if (action == "MoveRight")
         {
@@ -109,7 +114,7 @@ public class SpaceshipControl : MonoBehaviour
         {
             spaceship.DeactivateShield();
         }
-        else if(action == "Heal")
+        else if (action == "Heal")
         {
             spaceship.Heal(40);
         }

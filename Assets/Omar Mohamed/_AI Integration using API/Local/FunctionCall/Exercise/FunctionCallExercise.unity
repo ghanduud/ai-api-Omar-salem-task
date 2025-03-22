@@ -910,7 +910,7 @@ MonoBehaviour:
   stream: 1
   playerName: user
   AIName: Ai
-  prompt: 
+  prompt: You name is Ghandy and you are space ship captain
   setNKeepToPrompt: 1
   chat: []
   grammarString: 
