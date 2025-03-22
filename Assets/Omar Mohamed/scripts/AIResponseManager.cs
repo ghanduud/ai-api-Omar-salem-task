@@ -92,7 +92,6 @@ public class AIResponseManager : MonoBehaviour {
     }
 
     private string apiUrl = "https://api-inference.huggingface.co/models/google/gemma-2-2b-it";
-    private string apiKey = "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"; // Replace with your actual Hugging Face API key
 
     public void SendRequestToAPI(string inputText) {
         StartCoroutine(SendRequestCoroutine(inputText));
